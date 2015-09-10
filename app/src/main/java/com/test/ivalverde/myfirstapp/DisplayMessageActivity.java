@@ -2,6 +2,7 @@ package com.test.ivalverde.myfirstapp;
 
 import android.content.Intent;
 import android.provider.LiveFolders;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -21,6 +22,11 @@ public class DisplayMessageActivity extends AppCompatActivity {
         textView.setText(message);
 
         setContentView(textView);
+
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setDisplayHomeAsUpEnabled(true);
+        }
     }
 
     @Override
@@ -37,4 +43,5 @@ public class DisplayMessageActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
 }
