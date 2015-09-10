@@ -9,7 +9,6 @@
         parent="Widget.AppCompat.Light.ActionBar.Solid.Inverse">
         <item name="android:background">@android:color/holo_orange_dark</item>
         <item name="background">@android:color/holo_orange_dark</item>
-
         <item name="android:titleTextStyle">@style/MyActionBarTitleText</item>
         <item name="titleTextStyle">@style/MyActionBarTitleText</item>
     </style>
